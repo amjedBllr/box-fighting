@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Alkatra&family=Baloo+2:wght@400;500;700&family=Bebas+Neue&family=Cinzel:wght@400;500;600;700&family=Hanalei&family=Henny+Penny&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Playfair+Display:ital,wght@0,400;1,500;1,600;1,700&family=Righteous&family=Voltaire&display=swap');
+*{
+    font-family: 'Righteous', cursive;
+
+}
+.gameContainer{
+    position: relative;
+    height:fit-content;
+    width:fit-content;
+}
+.topBar{
+    height: 80px;
+    top: 20px; left:0; right:0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.healthBar{
+    width: 42%;
+    height: 50px;
+    background-color: transparent;
+    border:2px solid white;
+    border-radius: 50px;
+    display: flex;
+}
+.healthBar:first-child{
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    border-right: 0px;
+    justify-content: flex-end;
+}
+.healthBar:last-child{
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    border-left: 0px;
+    justify-content: flex-start;
+}
+.hp{
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+}
+#playerHp{
+    background:linear-gradient(to left
+    ,rgba(255, 0, 0, 0.651),rgb(0, 119, 255));
+}
+#enemyHp{
+    background:linear-gradient(to right
+    ,rgba(255, 0, 0, 0.651),rgb(0, 119, 255));
+}
+.timer{
+    width: 10%;
+    height: 80px;
+    background-color: rgb(12, 176, 121);
+    border-radius: 10px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gameResult{
+    position:absolute;
+    height: 50px;
+    width: 300px;
+    right: 50%;
+    top: 40%;
+    transform: translateX(50%)  translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gameResult > p {
+    font-size:30px;
+    color: white;
+}

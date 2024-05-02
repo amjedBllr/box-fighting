@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="index.css">
+<head>
+    <title>MyWebSite</title>
+</head>
+<body>
+    <!---------everything's container------------>
+    <div class="gameContainer">
+        <!--------the top bar---------->
+        <div class="topBar">
+            <div class="healthBar">
+                <div class="hp" id="playerHp"></div>
+            </div>
+            <div class="timer">
+                60
+            </div>
+            <div class="healthBar">
+                <div class="hp" id="enemyHp"></div>
+            </div>
+        </div>
+        <!--------game main body---------->
+        <div id="gameResult">
+            <p></p>
+        </div>
+        <canvas id="workContainer"></canvas>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
